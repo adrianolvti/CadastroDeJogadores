@@ -1,25 +1,17 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
+<html lang="en">
     <head>
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/styles.css">
-        <script>
-            
-        </script>
     </head>
     <body>
         <h1>Cadastro de Jogadores</h1>
         
         <div id="bg">
             <hr>
-            <form>
+            <form action="envio.php" method="get"onsubmit="return validarFormulario()">
                 <label for="nome">Nome</label>
                 <input type="text" name="nome" id="nome" size="25"><br>
                 
@@ -33,17 +25,18 @@ and open the template in the editor.
                 </select><br>
                
                 <label for="altura">Altura</label>
-                <input type="text" name="altura" id="altura" size="10"><br>
+                <input type="decimal" name="altura" id="altura" placeholder="Ex: 1,70"><br>
                 
                 <label for="peso">Peso</label>
-                <input type="text" name="peso" id="peso" size="10"><br>
+                <input type="decimal" name="peso" id="peso" placeholder="Ex: 69,5"><br>
                 
                 <label for="idade">Idade</label>
-                <input type="text" name="idade" id="idade" size="10"><br>
+                <input type="number" name="idade" id="idade"><br>
                 
                 <input type="submit" name="enviar" value="Enviar">
                 <input type="reset" name="limpar" value="Limpar">
             </form>
         </div>
+        <script type="text/javascript" src="js/validacoes.js"></script>
     </body>
 </html>
