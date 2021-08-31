@@ -1,0 +1,24 @@
+h1 {
+    font-family: "verdana";
+    font-size: 22pt;
+    font-style: italic;
+}
+
+#bg {
+    width: 300px;
+    background-color: #0000ff;
+    font-family: "arial";
+    font-size: 14px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+hr {
+    position: relative;
+    width: 310px;
+    top: -10px;
+}
+
+form {
+    padding: 10px;
+}
